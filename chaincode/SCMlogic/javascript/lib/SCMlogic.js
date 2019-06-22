@@ -6,7 +6,7 @@
 
 const { Contract } = require('fabric-contract-api');
 
-class FabCar extends Contract {
+class SCMlogic extends Contract {
 
     async initLedger(ctx) {
         console.info('============= START : Initialize Ledger ===========');
@@ -153,4 +153,4 @@ class FabCar extends Contract {
 
 }
 
-module.exports = FabCar;
+module.exports = SCMlogic;
