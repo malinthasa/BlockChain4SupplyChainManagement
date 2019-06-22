@@ -1,0 +1,33 @@
+# Copyright IBM Corp. All Rights Reserved.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+
+OrdererOrgs:
+ 
+  - Name: Orderer
+    Domain: bc4scm.de
+  
+    Specs:
+      - Hostname: orderer
+
+PeerOrgs:
+ 
+  - Name: IBO
+    Domain: ibo.bc4scm.de
+    Template:
+      Count: 2
+      # Start: 5
+      # Hostname: {{.Prefix}}{{.Index}} # default
+    Users:
+      Count: 2
+
+  - Name: Retailer
+    Domain: retailer.bc4scm.de
+    Template:
+      Count: 2
+      # Start: 5
+      # Hostname: {{.Prefix}}{{.Index}} # default
+    Users:
+      Count: 2 

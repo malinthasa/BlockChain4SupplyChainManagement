@@ -1,0 +1,33 @@
+---
+name: basic-network
+version: 1.0.0
+client:
+    organization: IBO
+    connection:
+        timeout:
+            peer:
+                endorser: '300'
+            orderer: '300'
+channels:
+    mychannel:
+        orderers:
+        - orderer.bc4scm.de
+        peers:
+            peer0.ibo.bc4scm.de: {}
+organizations:
+    IBO:
+        mspid: IBOMSP
+        peers:
+        - peer0.ibo.bc4scm.de
+        certificateAuthorities:
+        - ca.bc4scm.de
+orderers:
+    orderer.bc4scm.de:
+        url: grpc://localhost:7050
+peers:
+    peer0.ibo.bc4scm.de:
+        url: grpc://localhost:7051
+certificateAuthorities:
+    ca.bc4scm.de:
+        url: http://localhost:7054
+        caName: ca.bc4scm.de
