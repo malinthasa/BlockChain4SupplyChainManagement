@@ -15,7 +15,7 @@ services:
       - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
       - FABRIC_CA_SERVER_CA_NAME=ca.bc4scm.de
       - FABRIC_CA_SERVER_CA_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.ibo.bc4scm.de-cert.pem
-      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/b97f626da6df4b149ab6e7f01db83ffc7bc5b8bf0561b7db053fc79671806423_sk
+      - FABRIC_CA_SERVER_CA_KEYFILE=/etc/hyperledger/fabric-ca-server-config/255fd5c9766ab5ad712073718291dd17f4dbcf3db715bae3dd80c69a9f3ac2c6_sk
 
     ports:
       - "7054:7054"
